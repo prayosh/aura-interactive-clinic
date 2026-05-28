@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Desk &amp; Intake | Aura Integrative Medical Clinic Pune</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Bar Notice -->
+    <div class="nav-top-banner">
+      Premium Multidisciplinary Consultation & Diagnostics Room • Authorized Clinic Since 2011
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="border-bottom">
+      <div class="container navbar">
+        <a href="index.html" class="navbar-brand">
+          <img src="logo.png" class="brand-logo" alt="Aura Logo" />
+          <div class="brand-text-wrapper">
+            <span class="brand-title">AURA</span>
+            <span class="brand-subtitle">INTEGRATIVE MEDICAL</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="specialties.html" class="nav-link">Specialties</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="gallery.html" class="nav-link">Infrastructure Grid</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact Desk</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-contact-desk">
+          Pune Clinic Desk: <span style="font-weight: 600;">+91 20 2567 8990</span>
+        </div>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div class="mobile-menu-drawer" id="mobileDrawer">
+        <ul class="mobile-nav-menu">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="specialties.html" class="mobile-nav-link">Specialties</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link">Infrastructure Grid</a></li>
+          <li><a href="contact.html" class="mobile-nav-link active">Contact Desk</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-line); font-size: 0.85rem;">
+          Pune Desk: +91 20 2567 8990
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header Banner -->
+      <section class="bg-sand border-bottom half-pad-section">
+        <div class="container hero-wrapper">
+          <span class="hero-overhead">Contact &amp; Schedulers</span>
+          <h1 class="hero-title" style="font-size: 2.75rem;">Intake Registration Office</h1>
+          <p class="lead" style="margin-bottom: 0;">
+            Connect directly with our Shivaji Nagar medical staff. Use our secure patient intake registry to request consultation times, or dial our central reception desk for urgent multi-specialty scheduling.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Main Split Section -->
+      <section>
+        <div class="container">
+          <div class="grid-2" style="grid-template-columns: 58% 42%; gap: 4rem;">
+            <!-- Intake Form Block -->
+            <div>
+              <form id="clinicalIntakeForm" class="form-fieldset" novalidate>
+                <h2 class="form-title">Clinical Intake &amp; Registration</h2>
+                <p class="form-subtitle">Complete the fields below to initiate your physical file. All data is processed under medical confidentiality guidelines.</p>
+
+                <div class="form-group-grid">
+                  <div class="form-group">
+                    <label class="form-label" for="patientName">Patient Full Name *</label>
+                    <input type="text" id="patientName" class="form-control" placeholder="e.g. Rajesh Bhosale" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="patientDob">Date of Birth *</label>
+                    <input type="date" id="patientDob" class="form-control" required />
+                  </div>
+                </div>
+
+                <div class="form-group-grid">
+                  <div class="form-group">
+                    <label class="form-label" for="patientPhone">Contact Number *</label>
+                    <input type="tel" id="patientPhone" class="form-control" placeholder="e.g. +91 98230 XXXXX" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="patientSpecialty">Preferred Specialty *</label>
+                    <select id="patientSpecialty" class="form-control" required>
+                      <option value="">-- Select Medical Department --</option>
+                      <option value="Internal Medicine">Internal Medicine &amp; Metabolics</option>
+                      <option value="Preventative Cardiology">Preventative Cardiology</option>
+                      <option value="Advanced Pediatrics">Advanced Pediatrics</option>
+                      <option value="Diagnostic Pathology">Diagnostic Pathology &amp; Lab</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="patientSymptoms">Detailed Symptom History &amp; Diagnostics Background *</label>
+                  <textarea id="patientSymptoms" class="form-control" placeholder="Describe symptoms, duration, and any past procedures..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Registration Record</button>
+
+                <!-- Feedback Message Alert Box -->
+                <div id="formAlert" class="form-message"></div>
+              </form>
+            </div>
+
+            <!-- Contact Location Sidebar -->
+            <div class="contact-sidebar">
+              <!-- Block 1: Address Details -->
+              <div class="sidebar-block">
+                <h3 class="sidebar-title">Clinic Jurisdiction Address</h3>
+                <p class="sidebar-content" style="line-height: 1.8;">
+                  <strong>Aura Integrative Medical Clinic</strong><br>
+                  Floor 1 &amp; 2, ICC Trade Tower,<br>
+                  Senapati Bapat Road, Near Chaturshringi Temple,<br>
+                  Shivaji Nagar, Pune, Maharashtra 411016
+                </p>
+                <div style="margin-top: 1rem;">
+                  <a href="https://maps.google.com" target="_blank" class="maps-link" style="font-weight: 600;">
+                    [ View Google Maps Navigation Matrix ]
+                  </a>
+                </div>
+              </div>
+
+              <!-- Block 2: Hours -->
+              <div class="sidebar-block" style="border-top: 1px solid var(--color-line); padding-top: 2rem;">
+                <h3 class="sidebar-title">Timing Schedule</h3>
+                <p class="sidebar-content">
+                  Monday to Saturday: <span style="font-weight: 500;">08:00 AM to 08:00 PM</span><br>
+                  Sunday: <span style="font-weight: 500;">Emergency Critical Care Desk Only (09:00 AM to 01:00 PM)</span>
+                </p>
+              </div>
+
+              <!-- Block 3: Direct Lines -->
+              <div class="sidebar-block" style="border-top: 1px solid var(--color-line); padding-top: 2rem;">
+                <h3 class="sidebar-title">Direct Inquiries</h3>
+                <p class="sidebar-content">
+                  Reception Desk: <span style="font-weight: 500;">+91 20 2567 8990</span><br>
+                  Emergency Critical Room: <span style="font-weight: 500;">+91 20 2567 8991</span><br>
+                  Lab Report Desk: <span style="font-weight: 500;">lab@auramedicalpune.org</span><br>
+                  General Queries: <span style="font-weight: 500;">contact@auramedicalpune.org</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Parking & Travel Notice -->
+      <section class="bg-sand border-top">
+        <div class="container">
+          <div class="grid-2">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Patient Parking &amp; Valley Services</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">
+                Secure basement parking is fully available inside the ICC Trade Tower complex for all visiting patients. Authorized valet parking desk is situated at the main entry lobby of Floor 1 from Senapati Bapat Road for elderly patients and individuals with limited mobile capacity.
+              </p>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Wheelchair &amp; Critical Access</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">
+                The clinic spans Floor 1 and Floor 2 with complete, step-free elevator access. High-load patient transfer elevators are positioned next to the parking lobby towers. Direct critical-access stretchers are stationed at our emergency desk at the rear elevator lobby.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Universal Page Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-main-grid">
+          <div class="footer-brand">
+            <div class="footer-logo-title">
+              <img src="logo.png" alt="Aura Logo Footer" />
+              <h3>AURA INTEGRATIVE MEDICAL CLINIC</h3>
+            </div>
+            <p class="footer-brand-desc">
+              Merging advanced diagnostic sciences with individualized treatment protocols. Delivering evidence-driven multi-specialty care and health restoration pathways to families across Maharashtra.
+            </p>
+          </div>
+
+          <div class="footer-details-grid">
+            <div>
+              <h4 class="footer-col-title">Navigation</h4>
+              <ul class="footer-links">
+                <li><a href="index.html" class="footer-link">Home Frame</a></li>
+                <li><a href="specialties.html" class="footer-link">Medical Specialties</a></li>
+                <li><a href="about.html" class="footer-link">Clinical Directors</a></li>
+                <li><a href="gallery.html" class="footer-link">Infrastructure Grid</a></li>
+                <li><a href="contact.html" class="footer-link">Contact Desk</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="footer-col-title">Clinic Hours</h4>
+              <p class="footer-text" style="font-size: 0.85rem; margin-bottom: 0;">
+                <span style="font-weight: 500; color: var(--color-charcoal);">Mon to Sat:</span><br>
+                08:00 AM – 08:00 PM<br><br>
+                <span style="font-weight: 500; color: var(--color-charcoal);">Sunday:</span><br>
+                09:00 AM – 01:00 PM<br>
+                (Critical Care Desk Only)
+              </p>
+            </div>
+
+            <div>
+              <h4 class="footer-col-title">Location Office</h4>
+              <p class="footer-text" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                Floor 1 &amp; 2, ICC Trade Tower,<br>
+                Senapati Bapat Road,<br>
+                Shivaji Nagar, Pune,<br>
+                Maharashtra 411016
+              </p>
+              <a href="contact.html" class="maps-link">Find Center On Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright-row">
+          <div class="footer-copyright-text">
+            © 2026 Aura Integrative Medical Clinic Pvt Ltd. All rights reserved. Managed under clinical registration statutes of Pune Municipal Corporation.
+          </div>
+          <div class="footer-national-tag">
+            National Clinical Accreditation System Verified
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
